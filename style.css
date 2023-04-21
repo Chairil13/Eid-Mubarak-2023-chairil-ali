@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: green;
+  font-family: 'Nunito', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.kupat {
+  animation-name: kupat;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+span {
+  background-color: white;
+  color: green;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+h1 {
+  color: white;
+}
+.desc {
+  margin-top: -10px;
+  text-align: center;
+  color: white;
+}
+audio {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+@keyframes kupat {
+  0% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(7deg);
+  }
+}
